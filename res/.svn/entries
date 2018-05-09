@@ -1,67 +1,0 @@
-10
-
-dir
-569
-svn://120.76.72.138/project/code/android/res
-svn://120.76.72.138/project
-
-
-
-2016-08-26T09:09:48.001562Z
-568
-yanpq
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-0c70d472-db5e-4046-8cde-fbe489c9595c
-
-values
-dir
-
-drawable
-dir
-
-drawable-hdpi
-dir
-
-drawable-xxhdpi
-dir
-
-anim
-dir
-
-values-v11
-dir
-
-drawable-ldpi
-dir
-
-values-v14
-dir
-
-drawable-mdpi
-dir
-
-raw
-dir
-
-drawable-xhdpi
-dir
-
-layout
-dir
-
-color
-dir
-
