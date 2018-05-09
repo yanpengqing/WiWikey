@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlue">#2BBCFF</color>
+    <color name="colorBlueTransParent">#772BBCFF</color>
+    <color name="text_title">#04163A</color>
+    <color name="aterrimus">#031F4B</color>
+    <color name="sub_head">#8191A7</color>
+    <color name="gray_text_btn">#8191A7</color>
+    <color name="colorGreen">#68BF60</color>
+    <color name="colorGrey">#D8DCE4</color>
+    <color name="colorGray">#D8DCE4</color>
+    <color name="colorHint">#D8DCE4</color>
+    <color name="colorBg">#FBFBFB</color>
+    <color name="textRed">#FF844F</color>
+    <color name="text_hint_normal">#ADB4C3</color>
+    <color name="colorBlack">#4A4A4A</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorRed">#88D0021B</color>
+    <color name="gray_line">#e3e3e3</color>
+    <color name="gray_text">#c3c3c3</color>
+    <color name="transparent">#00000000</color>
+    <color name="app_main">#47B8F7</color>
+     <color name="forget_password">#DCC9DB</color>
+    <color name="btn_down">#0096DC</color>
+    <color name="app_title_bg">#f6f6f6</color>
+    <color name="line_div">#e8e8e8</color>
+    <color name="yellow">#DCBA75</color>
+    <!-- 从中间弹出的提示框 -->
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="dialog_background">#4D000000</color>
+    <color name="evaluation_black">#FF6A6F7B</color>
+    <color name="evaluation_yellow">#FFDCBA75</color>
+    <!-- 从底部弹出 -->
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="light_gray">#99a4b7</color>
+    <color name="border_gray">#d9dfe5</color>
+    <color name="btn_gray">#d1d1d1</color>
+    <color name="glass_gall">#c2ebef</color>
+    <color name="light_blue">#87d0f2</color>
+
+</resources>

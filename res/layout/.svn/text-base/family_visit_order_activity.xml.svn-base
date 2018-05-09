@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/visit_order_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/visit_order_back"
+            style="@style/Back_Button" />
+
+        <TextView
+            android:id="@+id/visit_order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="来访预约"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_22" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGray" />
+
+    <RelativeLayout
+        android:id="@+id/visit_order_name_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="4dp" >
+
+        <TextView
+            android:id="@+id/visit_order_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="right"
+            android:text="　　姓名"
+            android:textColor="@color/text_title"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/visit_order_name_title"
+            android:background="@color/colorGray" />
+
+        <EditText
+            android:id="@+id/visit_order_name_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/visit_order_name_title"
+            android:background="@null"
+            android:hint="请输入来访者姓名"
+            android:lines="1"
+            android:maxLength="30"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:singleLine="true"
+            android:textColor="@color/text_title"
+            android:textColorHint="@color/colorHint"
+            android:textSize="@dimen/textsize_16" />
+
+        <Button
+            android:id="@+id/select_user"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/visit_order_name_text"
+            android:layout_alignBottom="@+id/visit_order_name_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/m_register"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/line_div" />
+
+    <RelativeLayout
+        android:id="@+id/visit_order_phone_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="4dp" >
+
+        <TextView
+            android:id="@+id/visit_order_phone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="right"
+            android:text="　　手机"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_16" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/visit_order_phone_title"
+            android:background="@color/colorGray" />
+        <EditText
+            android:id="@+id/visit_order_phone_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/visit_order_phone_title"
+            android:background="@null"
+            android:hint="请输入来访者手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text=""
+            android:textColor="@color/text_title"
+            android:textColorHint="@color/colorHint"
+            android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/line_div" />
+
+    <RelativeLayout
+        android:id="@+id/visit_order_start_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="4dp" >
+
+        <TextView
+            android:id="@+id/visit_order_start_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="right"
+            android:text="起始时间"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_16" />
+    <View
+            android:layout_width="0.5dp"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/visit_order_start_title"
+            android:background="@color/colorGray" />
+        <TextView
+            android:id="@+id/visit_order_start_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/visit_order_start_title"
+            android:background="@null"
+            android:hint="请选择起始时间"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text=""
+            android:textColor="@color/text_title"
+            android:textColorHint="@color/colorHint"
+            android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/line_div" />
+
+    <RelativeLayout
+        android:id="@+id/visit_order_validtime_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="4dp" >
+
+        <TextView
+            android:id="@+id/visit_order_validtime_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="right"
+            android:text="有效时长"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_16"
+            android:visibility="visible" />
+  <View
+            android:layout_width="0.5dp"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/visit_order_validtime_title"
+            android:background="@color/colorGray" />
+        <TextView
+            android:id="@+id/visit_order_validtime_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/visit_order_validtime_title"
+            android:background="@null"
+            android:inputType="number"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="默认2小时"
+            android:textColor="@color/text_title"
+            android:textColorHint="@color/text_hint_normal"
+            android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/line_div" />
+
+    <Button
+        android:id="@+id/visit_order_commit"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_common"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_20" />
+
+</LinearLayout>

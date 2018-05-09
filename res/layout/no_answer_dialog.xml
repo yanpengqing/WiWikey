@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/channel_evaluation"
+        android:layout_width="291dp"
+        android:layout_height="136dp"
+        android:background="@color/transparent" >
+
+        <RelativeLayout
+            android:layout_width="291dp"
+            android:layout_height="136dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/alert_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="无人接听"
+                android:textColor="@color/evaluation_black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:text="你可以直接拨打手机电话"
+                android:textColor="@color/evaluation_yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/evaluation_div"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_evaluate_dialog_div" />
+
+            <Button
+                android:id="@+id/evaluation_close"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/evaluation_div"
+                android:background="@color/transparent"
+                android:text="关闭"
+                android:textColor="@color/yellow"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/evaluation_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/evaluation_div"
+                android:background="@color/transparent"
+                android:text="拨打"
+                android:textColor="@color/actionsheet_blue"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+</RelativeLayout>

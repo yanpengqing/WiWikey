@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/authentication_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:background="@color/colorWhite"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/Call_details_back"
+            style="@style/Back_Button" />
+
+        <TextView
+            android:id="@+id/authentication_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="通话详情"
+            android:textColor="@color/aterrimus"
+            android:textSize="@dimen/textsize_22" />
+
+        <LinearLayout
+            android:id="@+id/Call_details_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/point_more" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/point_more" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/point_more" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_news_notify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorWhite" >
+
+            <ImageView
+                android:id="@+id/Call_details_icon"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_avatar" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Call_details_icon"
+                android:layout_alignTop="@+id/Call_details_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/Call_details_icon"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Call_details_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:text="小颜"
+                    android:textColor="@color/aterrimus"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_content_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sub_head"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/line_div" />
+
+        <LinearLayout
+            android:id="@+id/ll_item_door"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机"
+                    android:textColor="@color/aterrimus"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/Call_details_moblie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@color/colorWhite"
+                    android:text="189-0733-50278"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_div" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/grouping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分组"
+                    android:textColor="@color/aterrimus"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@id/grouping"
+                    android:text="未分组"
+                    android:textColor="@color/sub_head"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/home_icon_cbb" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_div" />
+
+            <LinearLayout
+                android:id="@+id/ll_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="备注"
+                        android:textColor="@color/aterrimus"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="点击填写"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_callRecords"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite" >
+        </ListView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_button_callout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/bt_video"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/actionsheet_middle_selector"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                
+                android:id="@+id/iv_btn_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/home_btn_video_blue" />
+
+            <TextView
+                android:id="@+id/tv_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="视频通话"
+                android:textColor="@color/colorBlue"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:id="@+id/bt_voice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/actionsheet_middle_selector"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_btn_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/home_btn_call_blue" />
+
+            <TextView
+                android:id="@+id/tv_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="语音通话"
+                android:textColor="@color/colorBlue"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

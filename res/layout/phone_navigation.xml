@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_plotName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/home_plot_select"
+            android:textColor="@color/text_title"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <com.wiwikeyandroid.view.PullToRefreshView
+        android:id="@+id/main_pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <com.wiwikeyandroid.view.StretchScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray_line" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_tenement_notify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:padding="8dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_notify_icon"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/home_message" />
+
+                    <TextView
+                        android:id="@+id/tv_title_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="3dip"
+                        android:layout_toRightOf="@id/iv_notify_icon"
+                        android:text="物业公告"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_content_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_title_name"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/iv_notify_icon"
+                        android:singleLine="true"
+                        android:text="小区物业发布的公告及紧急消息、物业…"
+                        android:textColor="#8191A7"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="68dp"
+                    android:background="@color/gray_line" />
+
+                <include
+                    android:id="@+id/rl_news_notify"
+                    layout="@layout/item_notify_msg" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBg"
+                    android:padding="2dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@color/colorBg"
+                        android:text="最近通话"
+                        android:textColor="@color/sub_head"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray_line" />
+
+                <ListView
+                    android:id="@+id/lv_call_records"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:footerDividersEnabled="false"
+                    android:scrollbars="none"
+                    android:visibility="gone" >
+                </ListView>
+
+                <RelativeLayout
+                    android:id="@+id/rl_homebg_es"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/iv_home_bg1_es"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/home_bg1_es" />
+
+                    <TextView
+                        android:id="@+id/go_ContactsFragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_home_bg1_es"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:text="“辣么拽”\n找人策策~"
+                        android:textColor="#2BBCFF"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.wiwikeyandroid.view.StretchScrollView>
+    </com.wiwikeyandroid.view.PullToRefreshView>
+
+</LinearLayout>

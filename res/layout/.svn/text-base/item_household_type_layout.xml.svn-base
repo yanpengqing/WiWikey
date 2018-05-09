@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/item_owner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="业主"
+        android:textColor="#2b2b2b"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/item_family"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="家庭成员"
+        android:textColor="#2b2b2b"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/item_rent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="租客"
+        android:textColor="#2b2b2b"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/item_else"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="其他"
+        android:textColor="#2b2b2b"
+        android:textSize="20sp" />
+
+</LinearLayout>

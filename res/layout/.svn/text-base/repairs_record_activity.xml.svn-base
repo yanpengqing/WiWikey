@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/repairs_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/repairs_back"
+           style="@style/Back_Button" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/top_select_left"
+                android:text="待处理 "
+                android:textColor="@drawable/text_top_selector"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/top_select_right"
+                android:text="已处理"
+                android:textColor="@drawable/text_top_selector"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/repairs_record_add"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:text="添加"
+            android:textColor="@color/gray_text_btn"
+            android:textSize="@dimen/textsize_20" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_div" />
+
+    <com.wiwikeyandroid.view.DragScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f3f3f3"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.wiwikeyandroid.view.MycallRecordsListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#00000000"
+                android:dividerHeight="0dp"
+                android:scrollbars="none" >
+            </com.wiwikeyandroid.view.MycallRecordsListView>
+
+            <FrameLayout
+                android:id="@+id/fl_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tv_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/iv_describe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="7dp"
+                            android:src="@drawable/home_bg3_es" />
+
+                        <TextView
+                            android:id="@+id/tv_describe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="28dp"
+                            android:lineSpacingExtra="2dp"
+                            android:textColor="@color/gray_text_btn"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </com.wiwikeyandroid.view.DragScrollView>
+
+</LinearLayout>

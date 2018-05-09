@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main" >
+
+    <!-- 本地通话 和 远程通话用户头像列表 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <FrameLayout
+            android:id="@+id/user_main_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/yellow" />
+
+        <ImageView
+            android:id="@+id/user_local_voice_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:scaleType="centerCrop"
+            android:src="@drawable/welcome" />
+        
+         <LinearLayout
+        android:id="@+id/ll_bottom_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/layout_bottom_door_control" />
+    </LinearLayout>
+    
+    </RelativeLayout>
+
+</RelativeLayout>

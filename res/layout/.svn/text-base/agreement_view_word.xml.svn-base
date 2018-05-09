@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/self_info_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/self_info_back"
+             style="@style/Back_Button" />
+
+        <TextView
+            android:id="@+id/self_info_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:text="使用协议与隐身保护政策"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_22" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_div" />
+    </RelativeLayout>
+
+    <WebView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/word_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

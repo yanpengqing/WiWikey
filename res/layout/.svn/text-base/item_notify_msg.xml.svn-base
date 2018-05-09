@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_news_notify"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:padding="8dip"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/phone_navigation">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_notify_icon"
+        android:layout_width="52dip"
+        android:layout_height="52dip"
+        android:src="@drawable/home_news" />
+
+    <TextView
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/tv_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_notify_icon"
+        android:text="小区新闻"
+        android:textColor="@color/colorBlue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/tv_content_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_name"
+        android:layout_toRightOf="@id/iv_notify_icon"
+        android:singleLine="true"
+        android:text="最新活动、办事指南、生活百科、业主…"
+        android:textColor="#8191A7"
+        android:textSize="16sp" />
+
+</RelativeLayout>

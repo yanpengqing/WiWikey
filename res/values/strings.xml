@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WiWikey</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="back">返回</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载中\u2026</string>
+     <string name="agreement">点击登录即表示您同意</string>
+     <string name="LinkText">《唯家使用条款和服务协议》</string>
+    <string name="about_wiwi_title">唯家智慧社区</string>
+    <string name="about_wiwi_all">&#12288;&#12288;唯家智慧社区,是一款是一项集\"安全出入\"\"物业管理\"\"和谐邻里\"\"出门提醒\"\"社区服务\"\"广告投放\"为一体的综合智慧社区APP。它将市场需求与互联网科技相结合,旨在为物业提供更科学、更智能的物业管理系统;为社区居民带来更智能、更安全的居家体验。最终实现物业、业主、周边商户的共赢。</string>
+    <string name="q_title_login">1.唯家登录、注册/退出方法.</string>
+    <string name="q_title_cut">2.唯家切换账号登录方法.</string>
+    <string name="q_title_sign">3.签到有何用处？</string>
+    <string name="q_title_video">4.视频电话/语音电话如何使用？</string>
+    <string name="q_title_get">5.如何获得免费视频与电话资格？</string>
+    <string name="q_title_add">6.怎么添加家庭新成员？</string>
+    <string name="q_title_order">7.如何为亲朋好友预约开门密码？</string>
+    <string name="q_title_message">8.如何开启或关闭新消息提醒.</string>
+    <string name="q_text_cut">首先进入系统设置退出当前账号，然后在登录界面输入需登录的账号信息.</string>
+    <string name="q_text_sign">每日进行签到可获得积分，累积一定的积分可兑换免费通话分钟.</string>
+    <string name="q_text_video">视频电话：选择要视频的人，点击进入详情页，选择底部视频通话按钮即可.</string>
+    <string name="q_text_voice">语音电话：选择要通电话的人，点击进入详情页，选择底部语音通话按钮即可.</string>
+    <string name="q_text_get">安装唯家APP并注册成为唯家用户，就可以免费拨打电话与视频通话.（此功能仅限通话双方都是唯家用户）
+下载地址：www.wiwikey.com</string>
+    <string name="q_text_add">在底部菜单栏进入 "我的" 界面，然后点击住户登记，页面上方点击添加新成员.</string>
+    <string name="q_text_order">底部菜单栏进入 "发现" 页面，点击来访预约，进入界面后输入对方信息选择提交,然后点击发送给好友.</string>
+    <string name="q_text_message">底部菜单栏进入 "我的" 界面，点击系统设置，即可更改物业公告/或小区新闻消息通知状态.</string>
+
+</resources>

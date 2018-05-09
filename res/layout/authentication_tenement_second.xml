@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_title_height"
+       android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/authentication_back"
+            style="@style/Back_Button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="认证住户"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_22" />
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_div" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请补全业主的预留手机号码进行验证"
+            android:textSize="@dimen/textsize_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+       android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/mobile_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/textsize_20" />
+        
+        
+        <LinearLayout
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="15dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/pwd_et_4_1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/edit_bg"
+            android:inputType="number"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/pwd_et_4_2"
+           android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:drawablePadding="5dp"
+            android:background="@drawable/edit_bg"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/pwd_et_4_3"
+         android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/edit_bg"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/pwd_et_4_4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/edit_bg"
+            android:drawablePadding="5dp"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="30sp" />
+    </LinearLayout>
+        
+        
+        
+        
+         <TextView
+             android:id="@+id/mobile_behind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/textsize_20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请补全业主的预留手机号码进行验证"
+            android:textColor="@color/sub_head"
+            android:textSize="@dimen/textsize_16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_div" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/login_password_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:singleLine="true"
+            android:text="请输入验证码："
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_18" />
+
+        <EditText
+            android:id="@+id/login_code_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/login_password_et"
+            android:background="@color/transparent"
+            android:singleLine="true"
+            android:maxLength="4"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_18" />
+
+        <TextView
+            android:id="@+id/authen_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/textcolor_switch"
+            android:textSize="@dimen/textsize_18"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/login_getcode_hint"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/time_bg"
+            android:gravity="center"
+            android:text="60s"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_div" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="提示：业主电话补全正确后点击获取验证码，请于24小时内联系业主并输入验证码，或者联系业主补充相关成员信息"
+        android:textColor="@color/sub_head"
+        android:textSize="@dimen/textsize_12" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_common"
+        android:text="进行认证"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+</LinearLayout>

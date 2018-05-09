@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lLayout_bg"
+    android:background="@drawable/alert_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/emotionstore_progresscancelbtn" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textColor="@color/text_title"
+        android:text="尊敬的用户您好，如果您的小区未安装唯家智慧社区"
+        android:textSize="@dimen/textsize_14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/text_title"
+        android:padding="3dp"
+          android:singleLine="true"
+        android:text="楼宇对讲机，请填写以下内容申请开通，谢谢。"
+        android:textSize="@dimen/textsize_14" />
+
+    <RelativeLayout
+        android:id="@+id/forget_password_phone_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/forget_password_phone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="right"
+            android:text="城市"
+            android:textSize="@dimen/textsize_14"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/forget_password_phone_line"
+            android:layout_width="0.5dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/forget_password_phone_title"
+            android:background="@color/alertdialog_line" />
+
+        <TextView
+            android:id="@+id/et_select_city"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/forget_password_phone_line"
+            android:background="@null"
+            android:hint="请选择城市"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint_normal"
+            android:textSize="@dimen/textsize_14" />
+        
+        
+            <ImageView
+                android:id="@+id/tv_select_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_icon_cbb" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/alertdialog_line" />
+
+    <RelativeLayout
+        android:id="@+id/forget_password_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/forget_password_new_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="小区"
+            android:textSize="@dimen/textsize_14"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/forget_password_new_line1"
+            android:layout_width="0.5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="55dp"
+            android:layout_toRightOf="@+id/forget_password_new_title1"
+            android:background="@color/alertdialog_line" />
+
+        <EditText
+            android:id="@+id/et_address_plot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/forget_password_new_line1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入你所在的小区名称"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint_normal"
+            android:textSize="@dimen/textsize_14" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/alertdialog_line" />
+
+    <RelativeLayout
+        android:id="@+id/forget_password_new_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+         android:layout_marginTop="5dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/forget_password_new_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="right"
+            android:text="姓名"
+            android:textSize="@dimen/textsize_14"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/forget_password_new_line2"
+            android:layout_width="0.5dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/forget_password_new_title2"
+            android:background="@color/alertdialog_line" />
+
+        <EditText
+            android:id="@+id/et_bind_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/forget_password_new_line2"
+            android:background="@null"
+            android:hint="请输入您的真实姓名"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint_normal"
+            android:textSize="@dimen/textsize_14" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/alertdialog_line" />
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_common"
+        android:text="提交"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_14" />
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/home_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/navigation_tab_ll" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/navigation_tab_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#F6F6F6"
+                android:orientation="horizontal"
+                android:paddingTop="1dp"
+                android:weightSum="5" >
+
+                <LinearLayout
+                    android:id="@+id/id_phone_ll"
+                    style="@style/style_navigation_tab_ll" >
+
+                    <ImageView
+                        android:id="@+id/id_phone_iv"
+                        style="@style/style_navigation_tab_iv"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/phone" />
+
+                    <TextView
+                        android:id="@+id/id_phone_tv"
+                        style="@style/style_navigation_tab_tv"
+                        android:text="电话"
+                        android:textColor="@color/colorBlue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/id_contacts_ll"
+                    style="@style/style_navigation_tab_ll" >
+
+                    <ImageView
+                        android:id="@+id/id_contacts_iv"
+                        style="@style/style_navigation_tab_iv"
+                         android:scaleType="centerInside"
+                        android:src="@drawable/contacts" />
+
+                    <TextView
+                        android:id="@+id/id_contacts_tv"
+                        style="@style/style_navigation_tab_tv"
+                        android:text="联系人"
+                        android:textColor="@color/gray_text_btn" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/id_door_ll"
+                    style="@style/style_navigation_tab_ll" >
+
+                    <ImageView style="@style/style_navigation_tab_iv" />
+
+                    <TextView
+                        style="@style/style_navigation_tab_tv"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/id_family_ll"
+                    style="@style/style_navigation_tab_ll" >
+
+                    <ImageView
+                        android:id="@+id/id_family_iv"
+                        style="@style/style_navigation_tab_iv"
+                         android:scaleType="centerInside"
+                        android:src="@drawable/family" />
+
+                    <TextView
+                        android:id="@+id/id_family_tv"
+                        style="@style/style_navigation_tab_tv"
+                        android:text="唯家"
+                        android:textColor="@color/gray_text_btn" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/id_setting_ll"
+                    style="@style/style_navigation_tab_ll" >
+
+                    <ImageView
+                        android:id="@+id/id_setting_iv"
+                        style="@style/style_navigation_tab_iv"
+                         android:scaleType="centerInside"
+                        android:src="@drawable/setting" />
+
+                    <TextView
+                        android:id="@+id/id_setting_tv"
+                        style="@style/style_navigation_tab_tv"
+                        android:text="我的"
+                        android:textColor="@color/gray_text_btn" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/id_opendoor_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/open_door_press" >
+            </ImageView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

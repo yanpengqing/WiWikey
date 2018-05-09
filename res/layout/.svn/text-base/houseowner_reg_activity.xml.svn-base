@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/reg_plotinfo_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/houseowner_reg_back"
+            style="@style/Back_Button" />
+
+        <TextView
+            android:id="@+id/houseowner_reg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="住户成员"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_22" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_div" />
+
+    <RelativeLayout
+        android:id="@+id/houseowner_reg_add_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:onClick="true" >
+
+        <TextView
+            android:id="@+id/houseowner_reg_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/add"
+            android:drawablePadding="12dp"
+            android:gravity="center"
+            android:text="添加新成员"
+            android:textColor="@color/app_main"
+            android:textSize="@dimen/textsize_14" />
+        
+        
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray_line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/houseowner_reg_listview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <com.wiwikeyandroid.view.SwipeListView
+            android:id="@+id/houseowner_reg_listview"
+            style="@style/listviewTheme"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:divider="@color/line_div"
+            android:dividerHeight="0.5dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorBg"
+            android:layout_weight="1" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

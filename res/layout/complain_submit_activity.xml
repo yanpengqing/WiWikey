@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/repairs_private_apply_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/complain_back"
+        style="@style/Back_Button" />
+
+        <TextView
+            android:id="@+id/complain_apply_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="物业反馈"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_22" />
+
+        <Button
+            android:id="@+id/repairs_private_apply_history"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:textColor="@color/gray_text_btn"
+            android:textSize="@dimen/title_back" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_div" />
+    </RelativeLayout>
+    <!--
+    <RelativeLayout
+        android:id="@+id/repairs_apply_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/repairs_private_apply_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="right"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="原因："
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_16"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/repairs_apply_item_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/repairs_private_apply_item_arrow"
+            android:layout_toRightOf="@+id/repairs_private_apply_item_title"
+            android:background="@null"
+            android:hint="选取或填写投诉原因"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorHint"
+            android:textSize="@dimen/textsize_16" />
+
+        <ImageView
+            android:id="@+id/repairs_private_apply_item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:contentDescription=""
+            android:src="@drawable/home_icon_cbb" />
+    </RelativeLayout>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/repairs_subject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/repairs_subject_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="right"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="主题："
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_16"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/complain_subject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_toRightOf="@+id/repairs_subject_title"
+            android:background="@null"
+            android:hint="请填写投诉的主题"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorHint"
+            android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_div" />
+
+    <RelativeLayout
+        android:id="@+id/repairs_private_apply_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/repairs_private_apply_address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="right"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="位置："
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_16"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/complain_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_toRightOf="@+id/repairs_private_apply_address_title"
+            android:background="@null"
+            android:hint="请填写投诉的具体位置"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorHint"
+            android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_div" />
+
+    <TextView
+        android:id="@+id/repairs_private_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="right"
+        android:paddingTop="15dp"
+        android:text="说明："
+        android:textColor="@color/text_title"
+        android:textSize="@dimen/textsize_16"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/complaint_content"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:gravity="top|left"
+        android:hint="让您来到这里小唯表示真诚的歉意，您的心声我们会用心倾听，我们会尽快安排人员进行处理，谢谢。"
+        android:maxLength="200"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black"
+         android:textColorHint="@color/colorHint"
+         android:textSize="@dimen/textsize_16" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/line_div" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+            android:text="上传图片"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="5dp" >
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:horizontalSpacing="3dp"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp" >
+        </GridView>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/line_div" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="周一至周五，物业客服24小时为您服务。"
+        android:textColor="@color/text_hint_normal"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/complaint_commit"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_common"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_20" />
+
+</LinearLayout>

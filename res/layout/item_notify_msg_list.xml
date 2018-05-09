@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/iv_notify_icon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_message"
+             />
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_notify_icon" >
+
+            <TextView
+                android:id="@+id/tv_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dip"
+                android:text="停水通知"
+                android:textColor="@color/text_title"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dip"
+                android:text="5月02日"
+                android:textColor="@color/sub_head"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_content_name"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/iv_notify_icon"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="近期因为路段维修,小区要停水一段时间"
+            android:textColor="@color/sub_head"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

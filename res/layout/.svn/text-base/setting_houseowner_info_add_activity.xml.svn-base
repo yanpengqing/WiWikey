@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/houseowner_info_add_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:background="@color/app_title_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/houseowner_info_add_back"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/back_arrow"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="返回"
+            android:textColor="@color/gray_text_btn"
+            android:textSize="@dimen/title_back" />
+
+        <TextView
+            android:id="@+id/houseowner_info_add_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="完善成员资料"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_20" />
+
+        <!--
+             <Button
+            android:id="@+id/houseowner_info_add_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/houseowner_info_add_back"
+            android:layout_alignBottom="@+id/houseowner_info_add_back"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:paddingRight="10dip"
+            android:text="保存"
+            android:textColor="#47b8f7"
+            android:textSize="@dimen/textsize_16" />
+        -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="15dip"
+                            android:text="姓名"
+                            android:textColor="@color/text_title"
+                            android:textSize="@dimen/textsize_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="7"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="30dip"
+                            android:layout_gravity="center"
+                            android:background="@color/line_div" />
+
+                        <EditText
+                            android:id="@+id/houseowner_info_add_name_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="center|left"
+                            android:hint="请输入姓名"
+                            android:paddingLeft="15dip"
+                            android:textColor="@color/text_title"
+                            android:textColorHint="@color/text_hint_normal"
+                            android:textSize="@dimen/textsize_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/line_div" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/houseowner_info_add_sex_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="15dip"
+                            android:text="性别"
+                            android:textColor="@color/text_title"
+                            android:textSize="@dimen/textsize_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="30dip"
+                            android:layout_gravity="center"
+                            android:background="@color/line_div" />
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:gravity="center|left"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dip" >
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/houseowner_info_add_sex_line"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <RadioButton
+                                    android:id="@+id/houseowner_info_add_sex_man"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@+id/houseowner_info_add_sex_line"
+                                    android:button="@null"
+                                    android:checked="true"
+                                    android:drawableLeft="@drawable/style_select_sex"
+                                    android:gravity="center" />
+
+                                <TextView
+                                    android:id="@+id/tt_nan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/houseowner_info_add_sex_line"
+                                    android:paddingLeft="5.5dip"
+                                    android:text="男"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize_16" />
+
+                                <RadioButton
+                                    android:id="@+id/houseowner_info_add_sex_woman"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_toRightOf="@+id/houseowner_info_add_sex_man"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:drawableLeft="@drawable/style_select_sex" />
+
+                                <TextView
+                                    android:id="@+id/tt_nv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/houseowner_info_add_sex_line"
+                                    android:paddingLeft="5.5dip"
+                                    android:text="女"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize_16" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/line_div" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2.5"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:lines="1"
+                            android:paddingRight="15dip"
+                            android:text="手机号"
+                            android:textColor="@color/text_title"
+                            android:textSize="@dimen/textsize_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="7"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="30dip"
+                            android:layout_gravity="center"
+                            android:background="@color/line_div" />
+
+                        <EditText
+                            android:id="@+id/houseowner_info_add_phone_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="center|left"
+                            android:hint="请输入手机号码"
+                            android:inputType="phone"
+                            android:lines="1"
+                            android:maxLength="11"
+                            android:paddingLeft="15dip"
+                            android:textColor="@color/text_title"
+                            android:textColorHint="@color/text_hint_normal"
+                            android:textSize="@dimen/textsize_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/line_div" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2.5"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:lines="1"
+                            android:paddingRight="15dip"
+                            android:text="身份证"
+                            android:textColor="@color/text_title"
+                            android:textSize="@dimen/textsize_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="7"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="30dip"
+                            android:layout_gravity="center"
+                            android:background="@color/line_div" />
+
+                        <EditText
+                            android:id="@+id/houseowner_info_add_idcard_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:digits="4304219900617835X"
+                            android:gravity="center|left"
+                            android:hint="请输入身份证(字母需大写)"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLength="18"
+                            android:paddingLeft="15dip"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/text_hint_normal"
+                            android:textSize="@dimen/textsize_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/line_div" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2.5"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:lines="1"
+                            android:paddingRight="15dip"
+                            android:text="用户性质"
+                            android:textColor="@color/text_title"
+                            android:textSize="@dimen/textsize_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="7"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="30dip"
+                            android:layout_gravity="center"
+                            android:background="@color/line_div" />
+
+                        <TextView
+                            android:id="@+id/houseowner_info_add_status_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="center|left"
+                            android:hint="请选择用户性质"
+                            android:paddingLeft="15dip"
+                            android:textColor="@color/text_title"
+                            android:textColorHint="@color/text_hint_normal"
+                            android:textSize="@dimen/textsize_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/line_div" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2.5"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:lines="1"
+                            android:paddingRight="10dip"
+                            android:text="有效期止 "
+                            android:textColor="@color/text_title"
+                            android:textSize="@dimen/textsize_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="7"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="30dip"
+                            android:layout_gravity="center"
+                            android:background="@color/line_div" />
+
+                        <TextView
+                            android:id="@+id/ed_leave_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="center|left"
+                            android:hint="请输入住房有效期"
+                            android:paddingLeft="15dip"
+                            android:textColor="@color/text_title"
+                            android:textColorHint="@color/text_hint_normal"
+                            android:textSize="@dimen/textsize_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/line_div" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/houseowner_info_add_commit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_common"
+                android:text="保存"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textsize_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

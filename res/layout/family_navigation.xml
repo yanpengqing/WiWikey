@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_plotName"
+        style="@style/title_top"
+        android:text="" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+         <com.wiwikeyandroid.view.DragScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/colorBg" />
+
+            <RelativeLayout
+                android:id="@+id/rl_neighbor"
+                style="@style/family_navigation_item" >
+
+                <ImageView
+                    android:id="@+id/iv_neighbor_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/found_neighbor" />
+
+                <TextView
+                    android:id="@+id/tv_neighbor_name"
+                    style="@style/family_navigation_text"
+                    android:text="邻里圈" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="12dp"
+                android:background="@color/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_shoping"
+                style="@style/family_navigation_item"
+                android:layout_marginTop="1dp"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/iv_shoping_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/found_shopping" />
+
+                <TextView
+                    android:id="@+id/tv_shoping_name"
+                    style="@style/family_navigation_text"
+                    android:layout_toRightOf="@id/iv_shoping_icon"
+                    android:text="购物" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/colorBg" />
+
+            <RelativeLayout
+                android:id="@+id/rl_repair"
+                style="@style/family_navigation_item" >
+
+                <ImageView
+                    android:id="@+id/iv_repair_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/found_report" />
+
+                <TextView
+                    android:id="@+id/tv_repair_name"
+                    style="@style/family_navigation_text"
+                    android:layout_toRightOf="@id/iv_repair_icon"
+                    android:text="报事报修" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="12dp"
+                android:background="@color/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pay"
+                style="@style/family_navigation_item"
+                android:layout_marginTop="1dp" >
+
+                <ImageView
+                    android:id="@+id/iv_pay_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/found_pay" />
+
+                <TextView
+                    android:id="@+id/tv_pay_name"
+                    style="@style/family_navigation_text"
+                    android:layout_toRightOf="@id/iv_pay_icon"
+                    android:text="生活缴费" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="12dp"
+                android:background="@color/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_complain"
+                style="@style/family_navigation_item"
+                android:layout_marginTop="1dp" >
+
+                <ImageView
+                    android:id="@+id/iv_complain_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/found_fb" />
+
+                <TextView
+                    android:id="@+id/tv_complain_name"
+                    style="@style/family_navigation_text"
+                    android:layout_toRightOf="@id/iv_complain_icon"
+                    android:text="物业投诉" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/colorBg" />
+
+            <RelativeLayout
+                android:id="@+id/rl_visit"
+                style="@style/family_navigation_item" >
+
+                <ImageView
+                    android:id="@+id/iv_visit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/found_visit" />
+
+                <TextView
+                    android:id="@+id/tv_visit_name"
+                    style="@style/family_navigation_text"
+                    android:layout_toRightOf="@id/iv_visit_icon"
+                    android:text="来访预约" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBg" />
+        </LinearLayout>
+    </com.wiwikeyandroid.view.DragScrollView>
+    <!--
+    <RelativeLayout
+        android:id="@+id/rl_register"
+        style="@style/family_navigation_item"
+        android:layout_marginTop="1dp">
+
+        <ImageView
+            android:id="@+id/iv_register_icon"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_register_name"
+            style="@style/family_navigation_text"
+            android:layout_toRightOf="@id/iv_register_icon"
+            android:text="住户登记" />
+    </RelativeLayout>    -->
+
+</LinearLayout>

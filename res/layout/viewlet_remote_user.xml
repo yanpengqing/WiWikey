@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/viewlet_anchor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3B3E4D" >
+    </FrameLayout>
+
+  <!--   <ImageView
+        android:id="@+id/viewlet_remote_video_voice"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onMuteRemoteUsers"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_room_cell_microphone" /> -->
+
+    <!-- <TextView
+        android:id="@+id/remote_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="10sp" /> -->
+
+    <ImageView
+        android:id="@+id/viewlet_remote_video_switch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="3dp"
+        android:onClick="onSwitchRemoteUsers"
+       />
+
+</RelativeLayout>

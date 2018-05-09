@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/authentication_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/authentication_back"
+            style="@style/Back_Button" />
+
+        <TextView
+            android:id="@+id/authentication_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="认证住户"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_22" />
+
+        <Button
+            android:id="@+id/authentication_next"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:paddingRight="10dip"
+            android:text="下一步"
+            android:textColor="@color/sub_head"
+            android:textSize="@dimen/textsize_20" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_div" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市："
+            android:textSize="@dimen/textsize_14" />
+
+        <EditText
+            android:id="@+id/et_authentication_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:editable="false"
+            android:focusableInTouchMode="false"
+            android:hint="请选择城市"
+            android:text=""
+            android:textColorHint="@color/text_hint_normal"
+            android:textSize="@dimen/textsize_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/line_div" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小区："
+            android:textSize="@dimen/textsize_14" />
+
+        <EditText
+            android:id="@+id/et_authentication_plot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:editable="false"
+            android:focusableInTouchMode="false"
+            android:hint="请选择小区"
+            android:text=""
+            android:textColorHint="@color/text_hint_normal"
+            android:textSize="@dimen/textsize_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/line_div" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="房号："
+            android:textSize="@dimen/textsize_14" />
+
+        <EditText
+            android:id="@+id/et_authentication_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:hint="请输入房号"
+            android:inputType="number"
+            android:singleLine="true"
+            android:text=""
+            android:textColorHint="@color/text_hint_normal"
+            android:textSize="@dimen/textsize_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/line_div" />
+
+    <ListView
+        android:id="@+id/lv_authentication"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

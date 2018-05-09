@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/self_info_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/self_info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/back_arrow"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/gray_text_btn"
+            android:textSize="@dimen/title_back" />
+
+        <TextView
+            android:id="@+id/self_info_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="系统设置"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_22" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_div" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="物业公告"
+            android:textColor="@color/text_title"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/newmsg_notify_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="7dp"
+            android:paddingRight="5dp"
+            android:paddingTop="7dp"
+            android:src="@drawable/model_on" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:text="如果您要关闭或开启wiwikey的物业公告，可在此进行更改。"
+        android:textColor="@color/text_hint_normal"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="小区新闻"
+            android:textColor="@color/text_title"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/new_msg_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="7dp"
+            android:paddingRight="5dp"
+            android:paddingTop="7dp"
+            android:src="@drawable/model_on" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:text="如果您要关闭或开启wiwikey的小区新闻通知，可在此进行更改。"
+        android:textColor="@color/text_hint_normal"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/sys_setting_pasword"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/sys_setting_pasword_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:gravity="right"
+            android:text="修改密码"
+            android:textColor="@color/text_title"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/sys_setting_pasword_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:contentDescription=""
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:background="@color/line_div" />
+
+    <RelativeLayout
+        android:id="@+id/sys_setting_cache"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/sys_setting_cache_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:gravity="right"
+            android:text="清除缓存"
+            android:textColor="@color/text_title"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/sys_setting_cache_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:contentDescription="" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sys_setting_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white" >
+
+        <Button
+            android:background="@null"
+            android:id="@+id/sys_setting_logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="退出登录"
+            android:textColor="@color/text_title"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

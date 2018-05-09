@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/phone_plotnews_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/phone_plotnews_back"
+         style="@style/Back_Button"  />
+
+        <TextView
+            android:id="@+id/plotnews_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="社区新闻"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_22" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+    <ListView
+        android:id="@+id/lv_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000"
+          android:scrollbars="none"
+        android:dividerHeight="0dp" >
+    </ListView>
+
+</LinearLayout>

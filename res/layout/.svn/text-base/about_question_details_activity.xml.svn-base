@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/about_how_back"
+           style="@style/Back_Button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="常见问题"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/textsize_22" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_div" />
+
+    <com.wiwikeyandroid.view.DragScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/about_how_login"
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <TextView
+                    android:id="@+id/q_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="1.唯家登录、注册/退出方法."
+                    android:textColor="@color/text_title"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/line_div" />
+
+            <TextView
+                android:id="@+id/q_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="2dp"
+                android:text="登录：如图在登录界面有手机验证码登录、密码登录两种方式可供选择"
+                android:textColor="@color/sub_head"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/q_img"
+                android:layout_width="345dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/q_login_1" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_text_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                 >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_div" />
+
+                <TextView
+                    android:id="@+id/q_text_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="注册：1.小区业主信息在物业处有登记的无需注册，系统会给用户发送账号信息；2.非小区用户使用验证码登录成功即代表注册."
+                    android:textColor="@color/sub_head"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/q_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_div" />
+
+                <TextView
+                    android:id="@+id/q_text_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="退出：如图所示，在底部菜单栏进入“我的”界面，然后点击系统设置，在页面点击退出登录即可."
+                    android:textColor="@color/sub_head"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/q_img_second"
+                android:layout_width="345dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/q_logout_1" />
+        </LinearLayout>
+    </com.wiwikeyandroid.view.DragScrollView>
+
+</LinearLayout>

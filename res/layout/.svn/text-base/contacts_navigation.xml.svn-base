@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="3dp"
+            android:gravity="center_vertical" >
+
+            <RadioGroup
+                android:id="@+id/rg_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/rb_callrecorder"
+                    style="@style/Bottom_Tab_Style"
+                    android:checked="true"
+                    android:text="通讯录"
+                    android:textSize="17sp" />
+
+
+                <RadioButton
+                    android:id="@+id/rb_neighbours"
+                    style="@style/Bottom_Tab_Style"
+                    android:checked="false"
+                    android:text="邻里"
+                    android:textSize="17sp" />
+
+
+                <RadioButton
+                    android:id="@+id/rb_tenement"
+                    style="@style/Bottom_Tab_Style"
+                    android:text="物业"
+                    android:textSize="17sp" />
+
+
+                <RadioButton
+                    android:id="@+id/rb_life_service"
+                    style="@style/Bottom_Tab_Style"
+                    android:text="生活服务"
+                    android:textSize="17sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/ll_add"
+                android:layout_width="40dp"
+                android:gravity="center_vertical"
+                android:layout_height="25dp" >
+
+                <ImageView
+                    android:id="@+id/iv_add_contacts"
+                    android:layout_marginRight="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nav_add" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/indicate_line"
+            android:layout_width="5dp"
+            android:layout_height="0.5dp"
+            android:background="@color/colorBlue" />
+    </LinearLayout>
+
+    <!--
+         <TextView
+        android:id="@+id/tab_text"
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_marginLeft="10dp"
+        android:text="通讯录" />    -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

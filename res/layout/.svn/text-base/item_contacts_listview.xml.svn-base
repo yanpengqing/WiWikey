@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_et_seek"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorBg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:padding="8dp" >
+
+            <com.wiwikeyandroid.view.SeekEditText
+                android:id="@+id/et_seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout1"
+                android:background="@drawable/text_view_seek"
+                android:drawableLeft="@drawable/search_bar_icon"
+                android:ems="15"
+                android:hint="找人"
+                android:singleLine="true"
+                android:textColorHint="#999999"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+            <com.wiwikeyandroid.view.IndexableListView
+                android:id="@+id/lv_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@color/colorWhite"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/gray_line"
+                android:dividerHeight="1dip"
+                android:scrollbars="none" >
+            </com.wiwikeyandroid.view.IndexableListView>
+
+            <LinearLayout
+                android:id="@+id/ll_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_describe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/home_bg3_es" />
+
+                    <TextView
+                        android:id="@+id/tv_describe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:lineSpacingExtra="2dp"
+                        android:textColor="@color/gray_text_btn"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在努力加载中……"
+                    android:textColor="@color/sub_head" />
+            </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
